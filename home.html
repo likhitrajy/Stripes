@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="home.css" />
+    <script src="animal.js"></script>
+    <title>Stripes</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="logo-container">
+        <img src="logo.png" alt="Logo" />
+      </div>
+    </header>
+
+
+    <section class="about-section">
+      <h2>About the Website</h2>
+      <p>
+        This website sheds light on some of the wildlife animals that are prone
+        to extinction. This harms the sustainability of our planet's
+        environment. It is important for us humans to come together and fight
+        for this cause. Join in donating for the preservation of our
+        environment. Every penny matters and you could make a difference. Help
+        the animals and earn a stripe!
+      </p>
+    </section>
+
+  
+    <h1 class="animal-header">Animals</h1>
+    <div class="animal-grid">
+      <div
+        class="polaroid"
+        onclick="scrollToContent('african forest elephant')"
+      >
+        <img
+          src="/animalpics/African_Forest_Elephant.webp"
+          alt="elephant"
+          class="image"
+        />
+        <p style="text-align: center; font-weight: bold">
+          African Forest Elephant
+        </p>
+      </div>
+      <div class="polaroid" onclick="scrollToContent('amur leopard')">
+        <img src="/animalpics/amur_leopard.avif" alt="leopard" class="image" />
+        <p style="text-align: center; font-weight: bold">Amur Leopard</p>
+      </div>
+      <div class="polaroid" onclick="scrollToContent('giant panda')">
+        <img src="/animalpics/giant_panda.jpg" alt="panda" class="image" />
+        <p style="text-align: center; font-weight: bold">Giant Panda</p>
+      </div>
+      <div class="polaroid" onclick="scrollToContent('great white shark')">
+        <img
+          src="/animalpics/great_white_shark.webp"
+          alt="shark"
+          class="image"
+        />
+        <p style="text-align: center; font-weight: bold">Great White Shark</p>
+      </div>
+      <div class="polaroid" onclick="scrollToContent('marine iguana')">
+        <img src="/animalpics/marine_iguana.jpg" alt="iguana" class="image" />
+        <p style="text-align: center; font-weight: bold">Marine Iguana</p>
+      </div>
+      <div class="polaroid" onclick="scrollToContent('tree kangaroo')">
+        <img
+          src="/animalpics/tree_kangaroo.webp"
+          alt="kangaroo"
+          class="image"
+        />
+        <p style="text-align: center; font-weight: bold">Tree Kangaroo</p>
+      </div>
+    </div>
+    <div id="content"></div>
+  </body>
+</html>
